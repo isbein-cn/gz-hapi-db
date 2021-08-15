@@ -1,76 +1,13 @@
 {
-  "_args": [
-    [
-      "@clickdishes/hapi-db@1.1.5",
-      "/root/nomme/clickdishes-backend-chinese-version-development"
-    ]
-  ],
-  "_from": "@clickdishes/hapi-db@1.1.5",
-  "_id": "@clickdishes/hapi-db@1.1.5",
-  "_inBundle": false,
-  "_integrity": "sha512-CEfmHuOS7I0gHDm6pvHZZcHiG0dL73z2Fn4qu37JB0SkHiiSkLrB7FZh7OW7yIlFMMj5M/piZSRi47mxLufdvQ==",
-  "_location": "/@clickdishes/hapi-db",
-  "_phantomChildren": {
-    "babel-runtime": "6.26.0",
-    "bluebird": "3.5.3",
-    "chalk": "2.3.2",
-    "commander": "2.19.0",
-    "debug": "3.1.0",
-    "inherits": "2.0.3",
-    "interpret": "1.2.0",
-    "isemail": "3.2.0",
-    "liftoff": "2.5.0",
-    "lodash": "4.17.15",
-    "minimist": "1.2.0",
-    "mkdirp": "0.5.1",
-    "pg-connection-string": "2.0.0",
-    "tarn": "1.1.4",
-    "tildify": "1.2.0",
-    "topo": "3.0.3",
-    "uuid": "3.3.2",
-    "v8flags": "3.1.2"
-  },
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "@clickdishes/hapi-db@1.1.5",
-    "name": "@clickdishes/hapi-db",
-    "escapedName": "@clickdishes%2fhapi-db",
-    "scope": "@clickdishes",
-    "rawSpec": "1.1.5",
-    "saveSpec": null,
-    "fetchSpec": "1.1.5"
-  },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/@clickdishes/hapi-db/-/hapi-db-1.1.5.tgz",
-  "_spec": "1.1.5",
-  "_where": "/root/nomme/clickdishes-backend-chinese-version-development",
-  "author": {
-    "name": "Igor Golovanov",
-    "email": "igor.golovanov@gmail.com"
-  },
-  "bugs": {
-    "url": "https://github.com/clickdishes/hapi-db/issues"
-  },
-  "dependencies": {
-    "bounce": "1.x.x",
-    "hoek": "^5.0.4",
-    "joi": "^13.6.0",
-    "knex": "^0.15.2"
-  },
+  "name": "gz-hapi-db",
   "description": "Hapi.js Knex.js and Objection.js integration plugin",
-  "devDependencies": {
-    "code": "5.2.x",
-    "hapi": "^17.5.4",
-    "lab": "16.x.x",
-    "sqlite3": "4.x.x"
+  "homepage": "https://gitee.com/oksever/gz-hapi-db#readme",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitee.com/oksever/gz-adserver.git"
   },
-  "engines": {
-    "node": ">=8.9.x"
-  },
-  "homepage": "https://github.com/clickdishes/hapi-db#readme",
+  "main": "lib/index.js",
   "keywords": [
     "hapi",
     "plugin",
@@ -80,19 +17,21 @@
     "postgres",
     "postgresql"
   ],
-  "license": "ISC",
-  "main": "lib/index.js",
-  "name": "@clickdishes/hapi-db",
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "dependencies": {
+    "@hapi/bounce": "^2.0.0",
+    "@hapi/hoek": "^9.2.0",
+    "knex": "^0.21.21"
+  },
+  "devDependencies": {},
   "peerDependencies": {
     "hapi": ">=17.x.x"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/clickdishes/hapi-db.git"
   },
   "scripts": {
     "test": "lab -a code -t 70 -v -m 3000",
     "test-cov-html": "lab -a code -r html -o coverage.html"
   },
-  "version": "1.1.5"
+  "license": "ISC"
 }
